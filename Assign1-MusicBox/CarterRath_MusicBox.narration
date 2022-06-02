@@ -1,0 +1,194 @@
+opening html tag
+opening body tag 
+song credits
+opening text area tag for interpret box
+notes A and Q
+notes B and Q
+notes C, R, and S
+note D
+null
+null
+null
+notes E and T
+null
+null
+null
+null
+note F
+null
+note G
+null
+note H
+null
+note I
+null
+note J
+null
+note K
+note L
+note M
+null
+note N
+note O
+note P
+closing text area tag
+opening text area tag for compile box
+closing text area tag
+button to that will call play_music function and play notes from the interpret box
+opening script tag
+function header for play_music that will read the notes and play mp3 files accordingly
+will get elements from the interpret text box and store it in the music variable
+will take the music variable and split the text box into an array of lines
+start compile output string with html, body, and script opening tags
+variable for the delay of setIntervals used for notes A, B, C, and D
+variable for the delay of setTimeout used for all notes except for A
+variable for the delay of setTimeout used for notes S and T
+add the variables to the compiled output because they're needed for the notes to play in a separate html file
+for loop, index i will loop through each element of the lines array, i represents each row of the textbox
+line_timeout will set the delay of setTimeout to 3.5 seconds mulitplied by the row number where the note is found
+if statement checking if Note A was found in row i, column 0 of the textbox
+add the note to the compile output string
+play note A, which is 'DGB.mp3'
+loop note A in a set interval, set it equal to a variable so it can be eventually stopped
+play note A, which is 'DGB.mp3'
+Note A will be played with the delay of interval_timeout (14 seconds) until stopped
+closing bracket of if statement
+if statement checking if note B was found in row i, column 1 of the textbox
+add the note to the compile output string
+setTimeout for note B
+play note B, which is 'DGBb.mp3'
+loop note B in a set interval, set it equal to a variable so it can be eventually stopped
+play note B, which is 'DGBb.mp3'
+Note B will be played with the delay of interval_timeout (14 seconds) until stopped
+delay of line_timeout for the setTimeout of note B
+closing bracket of if statement
+if statement checking if note C was found in row i, column 2 of the textbox
+add the note to the compile output string
+setTimeout for note C
+play note C, which is 'DbEA.mp3'
+loop note C in a set interval, set it equal to a variable so it can be eventually stopped
+play note C, which is 'DbEA.mp3'
+Note C will be played with the delay of interval_timeout (14 seconds) until stopped
+delay of line_timeout for the setTimeout of note C
+closing bracket of if statement
+if statement checking if note D was found in row i, column 3 of the textbox
+add the note to the compile output string
+setTimeout for note D
+play note D, which is 'DbFA.mp3'
+loop note D in a set interval, set it equal to a variable so it can be eventually stopped
+play note D, which is 'DbFA.mp3'
+Note D will be played with the delay of interval_timeout (14 seconds) until stopped
+delay of line_timeout for the setTimeout of note D
+closing bracket of if statement
+if statement checking if note E was found in row i, column 4 of the textbox
+add the note to the compile output string
+setTimeout for note E
+stop the setInterval of note S
+play note E, which is 'FBAGF.mp3'
+delay of line_timeout for the setTimeout of note E
+closing bracket of if statement
+if statement checking if note F was found in row i, column 5 of the textbox
+add the note to the compile output string
+setTimeout for note F
+stop the setInterval of note T
+play note F, which is 'HeyThereLilHonay.mp3'
+delay of line_timeout for the setTimeout of note F
+closing bracket of if statement
+if statement checking if note G was found in row i, column 6 of the textbox
+add the note to the compile output string
+setTimeout for note G
+play note G, which is'IveBeenTryn.mp3'
+delay of line_timeout for the setTimeout of note G
+closing bracket of if statement
+if statement checking if note H was found in row i, column 7 of the textbox
+add the note to the compile output string
+setTimeout for note H
+play note H, which is 'HeyThereLilLonelay.mp3'
+delay of line_timeout for the setTimeout of note H
+closing bracket of if statement
+if statement checking if note I was found in row i, column 8 of the textbox
+add the note to the compile output string
+setTimeout for note I
+play note I, which is'iSaidiWould.mp3'
+delay of line_timeout for the setTimeout of note I
+closing bracket of if statement
+if statement checking if note J was found in row i, column 9 of the textbox
+add the note to the compile output string
+setTimeout for note J
+play note J, which is'YouSaidiKnow.mp3'
+delay of line_timeout for the setTimeout of note J
+closing bracket of if statement
+if statement checking if note K was found in row i, column 10 of the textbox
+add the note to the compile output string
+setTimeout for note K
+play note K, which is'ButimAfraid.mp3'
+delay of line_timeout for the setTimeout of note K
+closing bracket of if statement
+if statement checking if note L was found in row i, column 11 of the textbox
+add the note to the compile output string
+setTimeout for note L
+play note L, which is 'KnowingsNotMyThing.mp3'
+delay of line_timeout for the setTimeout of note L
+closing bracket of if statement
+if statement checking if note M was found in row i, column 12 of the textbox
+add the note to the compile output string
+setTimeout for note M
+play note M, which is'iWouldLikeToDanceWithYou.mp3'
+delay of line_timeout for the setTimeout of note M
+closing bracket of if statement
+if statement checking if note N was found in row i, column 13 of the textbox
+add the note to the compile output string
+setTimeout for note N
+play note N, which is'AwkwardlyInAHaze.mp3'
+delay of line_timeout for the setTimeout of note N
+closing bracket of if statement
+if statement checking if note O was found in row i, column 14 of the textbox
+add the note to the compile output string
+setTimeout for note O
+play note O, which is'ToOurLittleTune.mp3'
+delay of line_timeout for the setTimeout of note O
+closing bracket of if statement
+if statement checking if note P was found in row i, column 15 of the textbox
+add the note to the compile output string
+setTimeout for note P
+stop the setInterval of note A
+stop the setInterval of note B
+stop the setInterval of note C
+stop the setInterval of note D
+delay of line_timeout for the setTimeout of note P
+closing bracket of if statement
+if statement checking if note Q was found in row i, column 16 of the textbox
+add the note to the compile output string
+setTimeout for note Q
+play note Q, which is'G2.mp3'
+delay of line_timeout for the setTimeout of note Q
+closing bracket of if statement
+if statement checking if note R was found in row i, column 17 of the textbox
+add the note to the compile output string
+setTimeout for note R
+play note R, which is'E2.mp3'
+delay of line_timeout for the setTimeout of note R
+closing bracket of if statement
+if statement checking if note S was found in row i, column 18 of the textbox
+add the note to the compile output string
+setTimeout for note S
+loop note S in a set interval, set it equal to a variable so it can be eventually stopped
+play note S, which is 'FBAG.mp3'
+Note S will be played with the delay of line_interval (3.5 seconds) until stopped
+delay of line_timeout for the setTimeout of note S
+closing bracket of if statement
+if statement checking if note T was found in row i, column 19 of the textbox
+add the note to the compile output string
+setTimeout for note T
+loop note T in a set interval, set it equal to a variable so it can be eventually stopped
+play note T, which is'BAGFEFGF.mp3'
+Note T will be played with the delay of line_interval (3.5 seconds) until stopped
+delay of line_timeout for the setTimeout of note T
+closing bracket of if statement
+closing bracket of for loop
+add compile output string to compBox text area
+closing bracket of play_music function
+closing script tag
+gif
+closing body tag
+closing html tag

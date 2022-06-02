@@ -1,0 +1,192 @@
+<html>
+    <body>
+        <textarea id = "textBox" rows = "29" cols = "21">
+A               Q    
+ B              Q
+  C              RS
+   D   
+     
+    
+    
+    E              T
+
+
+
+
+     F
+      
+      G
+       
+       H 
+
+        I 
+          
+         J 
+          
+          K 
+           L 
+            M 
+             
+             N 
+              O 
+               P
+        </textarea>
+        <textarea id = "compBox" rows = "29" cols = "21">
+        </textarea>
+        <button onclick = "play_music();">Play Music</button>
+        <script>
+            function play_music(){
+                music = document.getElementById("textBox").value;
+                lines = music.split(/\r?\n/);
+                comp_output = "<html>\n<body>\n<script>\n"
+                interval_timeout = 14000
+                line_timeout = 0
+                line_interval = 3500
+                comp_output += "interval_timeout = 14000\nline_interval = 3500\n"
+                for (i = 0; i < lines.length; ++i){
+                    line_timeout = i * line_interval;
+                    if(lines[i][0] == 'A'){
+                        comp_output += "new Audio('DGB.mp3').play(); DGB = setInterval( function(){ new Audio('DGB.mp3').play(); } , interval_timeout);\n";
+                        new Audio('DGB.mp3').play();
+                        DGB = setInterval( function(){
+                            new Audio('DGB.mp3').play();
+                        } , interval_timeout);
+                    }
+                    if(lines[i][1] == 'B'){
+                        comp_output += "setTimeout( function (){ new Audio('DGBb.mp3').play(); DGBb = setInterval( function(){ new Audio('DGBb.mp3').play(); } , interval_timeout); } , 1 * line_interval);\n";
+                        setTimeout( function (){
+                            new Audio('DGBb.mp3').play();
+                            DGBb = setInterval( function(){
+                                new Audio('DGBb.mp3').play();
+                            } , interval_timeout);
+                        } , line_timeout);
+                    }
+                    if(lines[i][2] == 'C'){
+                        comp_output += "setTimeout( function (){ new Audio('DbEA.mp3').play(); DbEA = setInterval( function(){ new Audio('DbEA.mp3').play(); } , interval_timeout); } , 2 * line_interval);\n";
+                        setTimeout( function (){
+                            new Audio('DbEA.mp3').play();
+                            DbEA = setInterval( function(){
+                                new Audio('DbEA.mp3').play();
+                            } , interval_timeout);
+                        } , line_timeout);
+                    }
+                    if(lines[i][3] == 'D'){
+                        comp_output += "setTimeout( function (){ new Audio('DbFA.mp3').play(); DbFA = setInterval( function(){ new Audio('DbFA.mp3').play(); } , interval_timeout); } , 3 * line_interval);\n";
+                        setTimeout( function (){
+                            new Audio('DbFA.mp3').play();
+                            DbFA = setInterval( function(){
+                                new Audio('DbFA.mp3').play();
+                            } , interval_timeout);
+                        } , line_timeout);
+                    }
+                    if(lines[i][4] == 'E'){
+                        comp_output += "setTimeout( function (){ clearInterval(FBAG); new Audio('FBAGF.mp3').play(); } , 7 * line_interval);\n";
+                        setTimeout( function (){
+                            clearInterval(FBAG);
+                            new Audio('FBAGF.mp3').play();
+                        } , line_timeout);
+                    }
+                    if(lines[i][5] == 'F'){
+                        comp_output += "setTimeout( function (){ clearInterval(BAGFEFGF); new Audio('First.mp3').play(); } , 12 * line_interval);\n";
+                        setTimeout( function (){
+                            clearInterval(BAGFEFGF);
+                            new Audio('First.mp3').play();
+                        } , line_timeout);
+                    }
+                    if(lines[i][6] == 'G'){
+                        comp_output += "setTimeout( function (){ new Audio('Second.mp3').play(); } , 14 * line_interval);\n";
+                        setTimeout( function (){
+                            new Audio('Second.mp3').play();
+                        } , line_timeout);
+                    }
+                    if(lines[i][7] == 'H'){
+                        comp_output += "setTimeout( function (){ new Audio('Third.mp3').play(); } , 16 * line_interval);\n";
+                        setTimeout( function (){
+                            new Audio('Third.mp3').play();
+                        } , line_timeout);
+                    }
+                    if(lines[i][8] == 'I'){
+                        comp_output += "setTimeout( function (){ new Audio('Fourth.mp3').play(); } , 18 * line_interval);\n";
+                        setTimeout( function (){
+                            new Audio('Fourth.mp3').play();
+                        } , line_timeout);
+                    }
+                    if(lines[i][9] == 'J'){
+                        comp_output += "setTimeout( function (){ new Audio('Fifth.mp3').play(); } , 20 * line_interval);\n";
+                        setTimeout( function (){
+                            new Audio('Fifth.mp3').play();
+                        } , line_timeout);
+                    }
+                    if(lines[i][10] == 'K'){
+                        comp_output += "setTimeout( function (){ new Audio('Sixth.mp3').play(); } , 22 * line_interval);\n";
+                        setTimeout( function (){
+                            new Audio('Sixth.mp3').play();
+                        } , line_timeout);
+                    }
+                    if(lines[i][11] == 'L'){
+                        comp_output += "setTimeout( function (){ new Audio('Seventh.mp3').play(); } , 23 * line_interval);\n";
+                        setTimeout( function (){
+                            new Audio('Seventh.mp3').play();
+                        } , line_timeout);
+                    }
+                    if(lines[i][12] == 'M'){
+                        comp_output += "setTimeout( function (){ new Audio('Eigth.mp3').play(); } , 24 * line_interval);\n";
+                        setTimeout( function (){
+                            new Audio('Eigth.mp3').play();
+                        } , line_timeout);
+                    }
+                    if(lines[i][13] == 'N'){
+                        comp_output += "setTimeout( function (){ new Audio('Ninth.mp3').play(); } , 26 * line_interval);\n";
+                        setTimeout( function (){
+                            new Audio('Ninth.mp3').play();
+                        } , line_timeout);
+                    }
+                    if(lines[i][14] == 'O'){
+                        comp_output += "setTimeout( function (){ new Audio('Tenth.mp3').play(); } , 27 * line_interval);\n";
+                        setTimeout( function (){
+                            new Audio('Tenth.mp3').play();
+                        } , line_timeout);
+                    }
+                    if(lines[i][15] == 'P'){
+                        comp_output += "setTimeout( function (){ clearInterval(DGB); clearInterval(DGBb); clearInterval(DbEA); clearInterval(DbFA); } , 28 * line_interval);\n";
+                        setTimeout( function (){
+                            clearInterval(DGB);
+                            clearInterval(DGBb);
+                            clearInterval(DbEA);
+                            clearInterval(DbFA);
+                        } , line_timeout);
+                    }
+                    if(lines[i][16] == 'Q'){
+                        comp_output += "setTimeout( function (){ new Audio('G2.mp3').play(); } , 1 * line_interval);\n";
+                        setTimeout( function (){
+                            new Audio('G2.mp3').play();
+                        } , line_timeout);
+                    }
+                    if(lines[i][17] == 'R'){
+                        comp_output += "setTimeout( function (){ new Audio('E2.mp3').play(); } , 2 * line_interval);\n";
+                        setTimeout( function (){
+                            new Audio('E2.mp3').play();
+                        } , line_timeout);
+                    }
+                    if(lines[i][18] == 'S'){
+                        comp_output += "setTimeout( function (){ FBAG = setInterval( function(){ new Audio('FBAG.mp3').play(); } , line_interval); } , 2 * line_interval);\n";
+                        setTimeout( function (){
+                            FBAG = setInterval( function(){
+                            new Audio('FBAG.mp3').play();
+                            } , line_interval);
+                        } , line_timeout);
+                    }
+                    if(lines[i][19] == 'T'){
+                        comp_output += "setTimeout( function (){ BAGFEFGF = setInterval( function(){ new Audio('BAGFEFGF.mp3').play(); } , line_interval); } , 7 * line_interval);\n";
+                        setTimeout( function (){
+                            BAGFEFGF = setInterval( function(){
+                                new Audio('BAGFEFGF.mp3').play();
+                            } , line_interval);
+                        } , line_timeout);
+                    }
+                }
+                document.getElementById("compBox").value = comp_output + "<\/script></body></html>";
+            }
+        </script>
+    </body>
+</html>
